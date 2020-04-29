@@ -1,0 +1,10 @@
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: #54819E;
+  margin: 0 0 70px;
+}
+
+a {
+  text-decoration: none;
+}

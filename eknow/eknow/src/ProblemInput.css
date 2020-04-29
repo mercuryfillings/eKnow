@@ -1,0 +1,31 @@
+.input {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  flex-direction: column;
+}
+
+.field {
+  padding: 15px;
+  border-radius: 30px;
+  margin: 10px;
+  width: 75%;
+  border-color: transparent;
+}
+
+.field:hover {
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.4);
+  transition: .2s;
+}
+
+.button {
+  width: 150px;
+  height: 60px;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.button:hover {
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.4);
+  transition: .2s;
+}
