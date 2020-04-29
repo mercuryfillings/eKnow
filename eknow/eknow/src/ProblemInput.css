@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
 .input {
   display: flex;
   align-items: center;
@@ -11,6 +13,8 @@
   margin: 10px;
   width: 75%;
   border-color: transparent;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
 }
 
 .field:hover {
@@ -23,6 +27,11 @@
   height: 60px;
   border-radius: 5px;
   margin: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(83, 197, 93);
 }
 
 .button:hover {

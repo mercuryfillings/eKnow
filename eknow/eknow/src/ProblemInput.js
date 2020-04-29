@@ -2,22 +2,38 @@ import React, { useState } from 'react'
 import { withRouter } from 'react-router-dom';
 import './ProblemInput.css'
 
-function ProblemInput() {
+function ProblemInput(props) {
 
-  const [problem, setProblem] = useState('');
-
-  const handleClick = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    let problemText = e.target.value
-    setProblem(problemText)
-    console.log(problem)
+    props.history.push('/problem/')
+  }
+
+  function handleChange(e) {
+    props.onChange(e.target.value)
   }
 
   return (
-    <div className='input'>
-      <input maxLength='255' className='field' type="text" placeholder="Enter a problem."></input>
-      <button className='button' onClick={handleClick}>Start</button>
-    </div>
+    <>
+      <form
+        className='input'
+        onSubmit={handleSubmit}>
+
+        <input
+          maxLength='255'
+          className='field'
+          type="text"
+          value={props.value}
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+          placeholder="Enter a problem."
+        />
+        <input
+          type='submit'
+          value='START'
+          className='button' />
+      </form>
+    </>
   )
 }
 
