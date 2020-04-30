@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react'
 
 export default function ProblemList(props) {
-  const [list, setList] = useState([]);
+  // const [list, setList] = useState([]);
 
-    useEffect(() => {
-      setList(list.concat(props.problem));
-    }, [])
+  useEffect(() => {
+    props.setList(props.list.concat(props.problem));
+  }, [])
 
-  
-  console.log(list)
-  
+
+  console.log(props.list)
+
   return (
     <div>
       <ul>
         {
-          list.map((problem, i) => {
-            return <li key={i} className='probList'>{list[i]}</li>
+          props.list.map((li, i) => {
+            return <li key={i} className='probList'>{li}</li>
           })
         }
       </ul>
