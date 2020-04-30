@@ -37,6 +37,8 @@ Tablet Views: (https://wireframe.cc/iCCLnf)
 
 ### MVP
 
+Test 
+
 > The Brian Eno Cognitive Freezeup Override System (henseforth referred to as e-Know) helps its users bypass mental blocks by generating calming grayscale images overlaid with Brian Eno's Oblique Strategies, randomly delivering the exact piece of advice a user needs in overcome any creative hurdle. It will allow a user to input a particular problem they're encountering, then deliver a guiding-light strategy that locks at the top of the problem page, and draw a new card if the approach doesnt work. The user can then add timestampped notes detailing how they implemented the vaguely-worded wisdom of the ambient songsmith, and track the results of experimentation. It should also track how many cards it took to get to completion.
 
 I will create reusable styled elements in Storybook for cards, input fields, and buttons, and set up testing in jest to check that the elements are taking user input correctly.
