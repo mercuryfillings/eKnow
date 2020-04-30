@@ -6,7 +6,7 @@ function ProblemInput(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.history.push('/problem/')
+    props.history.push('/' + props.problem)
   }
 
   function handleChange(e) {
