@@ -65,15 +65,67 @@
   font-size: 1em;
   text-align: center;
   font-style: italic;
-  margin: 0;
+  margin: 10px 0;
   width: 100%;
+}
+
+.prob:hover {
+
+  color: green;
+  font-size: 1.1em;
+  transition: .3s;
 }
 
 .current-problem {
   margin: 5px;
 }
 
-@media (min-width: 600px) {
+.attempts {
+display: flex;
+align-items: center;
+}
+
+.attempt {
+  width: 100%;
+}
+
+.prob-button {
+  width: 2em;
+  height: 2em;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(83, 197, 93);
+}
+
+.prob-button:focus {
+  outline: none;
+}
+
+.prob-button:hover {
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.4);
+  transition: .2s;
+}
+
+.field {
+  padding: 15px;
+  border-radius: 30px;
+  margin: 10px;
+  width: 55%;
+  border-color: transparent;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+}
+
+.field:hover {
+  box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.4);
+  transition: .2s;
+}
+
+@media (min-width: 730px) {
   .headerBox .text {
     color: #fff;
     font-family: Quicksand, sans-serif;
@@ -87,4 +139,15 @@
     width: 90%;;
     transform: translate(-50%, -50%);
   }
+
+  .field {
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    width: 80%;
+    border-color: transparent;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
+  }
+
 }
