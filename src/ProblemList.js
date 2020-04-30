@@ -5,9 +5,11 @@ export default function ProblemList(props) {
 
     useEffect(() => {
       setList(list.concat(props.problem));
-      console.log(list + "THIS LIST")
     }, [])
 
+  
+  console.log(list)
+  
   return (
     <div>
       <ul>
