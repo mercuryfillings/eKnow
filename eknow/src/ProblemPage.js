@@ -46,15 +46,10 @@ export default function ProblemPage(props) {
 
   function handleRemove(i) {
     setMusings(musings.concat(fields[i].value))
-    console.log(musings)
     const values = [...fields];
     values.splice(i, 1);
     setFields(values);
     setNow(now.concat(new Date().toLocaleTimeString()))
-  }
-
-  function handleClick(e) {
-    setDisplay(!display)
   }
 
   return (
@@ -96,8 +91,7 @@ export default function ProblemPage(props) {
                 <input
                   type='submit'
                   value='+'
-                  className='prob-button'
-                  onClick={handleClick} />
+                  className='prob-button' />
               </form>
             </div>
           );

@@ -12,11 +12,19 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 function App() {
 
   const [problem, setProblem] = useState('');
-  const [problemList, setProblemList] = useState([])
+  // const [problemList, setProblemList] = useState([])
 
   function handleChange(newProblem) {
     setProblem(newProblem);
+    console.log(newProblem)
   }
+
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  //   setProblemList(problemList.concat(problem))
+  //   console.log(problemList)
+  // }
+
 
   return (
     <div>
@@ -42,7 +50,7 @@ function App() {
                       <div className='logocontainer'>
                         <img className='enopic' src={require('./Eno.jpg')} alt='Brian Eno' title='Brian Eno' /></div>
                       <ProblemInput problem={problem} onChange={handleChange} />
-                      {/* <ProblemList problem={problem} /> */}
+                      <ProblemList problem={problem} />
                     </section>
                   </Route>
                   <Route path={'/' + problem} exact>
