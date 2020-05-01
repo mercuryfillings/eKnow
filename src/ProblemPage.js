@@ -16,36 +16,29 @@ export default function ProblemPage(props) {
 
   const [fields, setFields] = useState([{ value: '' }]);
 
-  const [display, setDisplay] = useState(false)
-
-  const [musings, setMusings] = useState([])
-
   const [now, setNow] = useState([])
+
+  console.log(props.musings)
 
   function handleChange(i, e) {
     const values = [...fields];
     values[i].value = e.target.value;
     setFields(values);
-    console.log(values)
-    console.log(display)
   }
 
   function handleAdd() {
     const values = [...fields];
     values.push({ value: null });
     setFields(values);
-    setDisplay(!display)
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    handleRemove(0)
-    console.log(display)
-    console.log(now)
+    handleRemove(0);
   }
 
   function handleRemove(i) {
-    setMusings(musings.concat(fields[i].value))
+    props.setMusings(props.musings.concat(fields[i].value))
     const values = [...fields];
     values.splice(i, 1);
     setFields(values);
@@ -66,16 +59,14 @@ export default function ProblemPage(props) {
         <h2 className='current-problem'>{props.problem}</h2>
         <ul className='musing-box'>
           {
-            musings.map((musing, i) => {
-              return <li key={i} className='musings'><i>Card No. {strat.cardnumber}:</i> | {musings[i]} | <i>{now[i]}</i></li>
+            props.musings.map((musing, i) => {
+              return <li key={i} className='musings'><i>Card No. {strat.cardnumber}:</i> | {musing} | <i>{now[i]}</i></li>
             })
           }
         </ul>
         {fields.map((field, i) => {
           return (
             <div className='attempts' key={`${field}-${i}`}>
-
-
               <form
                 className='attempt'
                 onSubmit={handleSubmit}>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './ProblemList.css'
 
 export default function ProblemList(props) {
@@ -7,16 +8,12 @@ export default function ProblemList(props) {
     props.setList(props.list.concat(props.problem));
   }, [])
 
-
-  console.log(props.list.length)
-  console.log(props.list)
-
   return (
     <div>
       <ul>
         {
           props.list.map((li, i) => {
-            return <li key={i} className={li === "" ? 'emptyprob' : 'problist'}>{li}</li>
+            return <li key={i} className={li === "" ? 'emptyprob' : 'problist'}><Link to={'/' + props.problem}>{li}</Link></li>
           })
         }
       </ul>
