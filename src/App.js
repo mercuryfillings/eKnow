@@ -4,10 +4,9 @@ import './App.css';
 import ProblemInput from './ProblemInput'
 import ProblemPage from './ProblemPage'
 import ProblemList from './ProblemList'
+import Footer from './Footer'
 import Header from './Header'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-
-// const Prob = ({ problem }) => <div className="prob">{problem.text}</div>;
 
 function App() {
 
@@ -18,13 +17,6 @@ function App() {
     setProblem(newProblem);
     console.log(newProblem)
   }
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   setProblemList(problemList.concat(problem))
-  //   console.log(problemList)
-  // }
-
 
   return (
     <div>
@@ -59,6 +51,7 @@ function App() {
           </main>
         </div>
       )} />
+      <Footer />
     </div>
   )
 }

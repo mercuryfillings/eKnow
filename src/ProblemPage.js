@@ -83,7 +83,6 @@ export default function ProblemPage(props) {
                   maxLength='255'
                   className='field'
                   type="text"
-                  value={field.value || ""}
                   onChange={e => handleChange(i, e)}
                   onSubmit={handleSubmit}
                   placeholder="Add Musings"
