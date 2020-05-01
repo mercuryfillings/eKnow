@@ -331,7 +331,9 @@ export default function ProblemPage(props) {
 
 Despite being able to access my API from postman, I couldn't get it to work within the browser because of its CORS settings. Luckily, I found an API on Heroku called CORS Anywhere that help me get around this.
 
-I had a ton of trouble testing, and a lot of it came from the fact that jest and enzyme don't seem very friendly for testing when using withRouter. I had to wrap every test in a Router tag in the end, but it made it extremely hard to figure out if I was building tests incorrectly or encountering this weird withRouter complexity.
+I had a ton of trouble testing, and a lot of it came from the fact that jest and enzyme don't seem very friendly for testing when using withRouter. I had to wrap every test in a Router tag in the end, but it made it extremely hard to figure out if I was building tests incorrectly or encountering this weird withRouter complexity. 
+
+Also, I worked with hooks for this project, which we never covered testing on, so I need to look into testing hooks more because I think that caused me a lot of headaches under the hood. In general, I like hooks a lot, but we really didn't spend much time on them compared to class-based components, so I hit some major roadblocks along the way. I find it more difficult to understand the structure of a components state when using hooks, but it actually ends up being more economical code which is cool.
 
 Getting the old problems to render as clickable links on home was challenging because I needed to refactor everything from my child components to be props in my app component controlled by a helper function passed down as a prop; Big thanks to Soleil for helping with that. Similar problems happened with getting the musings to stick, but that was slightly easier.
 
