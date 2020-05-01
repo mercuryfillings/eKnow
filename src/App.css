@@ -67,7 +67,11 @@ h2 {
   background-color: rgba(255,255,255,.7);
   border-radius: 10px 10px 0 0;
   color: rgb(65, 65, 65);
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
   padding: 5px;
+}
+
+.foot {
+  margin: 10px;
 }

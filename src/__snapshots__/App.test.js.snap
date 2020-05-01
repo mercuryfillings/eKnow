@@ -1,0 +1,1268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot 1`] = `
+<div>
+  <p
+    className="footer"
+  >
+    Powered by 
+    <a
+      href="http://brianeno.needsyourhelp.org/"
+      target="_blank"
+    >
+      The Oblique Strategies API
+    </a>
+     and 
+    <a
+      href="https://picsum.photos/?ref=public-apis"
+      target="_blank"
+    >
+      Lorem Picsum
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Header render snapshot 1`] = `
+<div>
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="logo"
+      >
+        eKnow
+      </h1>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Homepage renders Homepage render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Homepage renders Problem page render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Homepage renders Problem page snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Homepage renders Problem page snapshot correctly 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Homepage renders renders correctly 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Homepage renders renders correctly 2`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Page render checks Footer render snapshot 1`] = `
+<div>
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="logo"
+      >
+        eKnow
+      </h1>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Page render checks Footer snapshot 1`] = `
+<div>
+  <p
+    className="footer"
+  >
+    Powered by 
+    <a
+      href="http://brianeno.needsyourhelp.org/"
+      target="_blank"
+    >
+      The Oblique Strategies API
+    </a>
+     and 
+    <a
+      href="https://picsum.photos/?ref=public-apis"
+      target="_blank"
+    >
+      Lorem Picsum
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Page render checks Header render snapshot 1`] = `
+<div>
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="logo"
+      >
+        eKnow
+      </h1>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Page render checks Header render snapshot 2`] = `
+<div>
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="logo"
+      >
+        eKnow
+      </h1>
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`Page render checks Homepage render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Page render checks Homepage render snapshot 2`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Page render checks Input render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Page render checks List render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Page render checks should render 0 1`] = `
+<div>
+  <p
+    className="footer"
+  >
+    Powered by 
+    <a
+      href="http://brianeno.needsyourhelp.org/"
+      target="_blank"
+    >
+      The Oblique Strategies API
+    </a>
+     and 
+    <a
+      href="https://picsum.photos/?ref=public-apis"
+      target="_blank"
+    >
+      Lorem Picsum
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Page renders Homepage render snapshot 1`] = `
+<div>
+  <div>
+    <header>
+      <div>
+        <nav
+          className="navbar"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <h1
+              className="logo"
+            >
+              eKnow
+            </h1>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <section
+          className="card"
+        >
+          <h2>
+            ASK ENO WHAT HE KNOW
+          </h2>
+          <div
+            className="logocontainer"
+          >
+            <img
+              alt="Brian Eno"
+              className="enopic"
+              src="Eno.jpg"
+              title="Brian Eno"
+            />
+          </div>
+          <form
+            className="input"
+            onSubmit={[Function]}
+          >
+            <input
+              className="field"
+              maxLength="255"
+              onChange={[Function]}
+              onSubmit={[Function]}
+              placeholder="Enter a problem."
+              type="text"
+            />
+            <input
+              className="button"
+              type="submit"
+              value="START"
+            />
+          </form>
+          <div>
+            <ul>
+              <li
+                className="emptyprob"
+              >
+                <a
+                  href="/"
+                  onClick={[Function]}
+                >
+                  
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section
+    className="foot"
+  >
+    <div>
+      <p
+        className="footer"
+      >
+        Powered by 
+        <a
+          href="http://brianeno.needsyourhelp.org/"
+          target="_blank"
+        >
+          The Oblique Strategies API
+        </a>
+         and 
+        <a
+          href="https://picsum.photos/?ref=public-apis"
+          target="_blank"
+        >
+          Lorem Picsum
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+`;

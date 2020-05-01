@@ -164,7 +164,7 @@ ul {
   transition: .2s;
 }
 
-@media (min-width: 730px) {
+@media (min-width: 700px) {
   .headerBox .text {
     color: #fff;
     font-family: Quicksand, sans-serif;
@@ -189,4 +189,8 @@ ul {
     font-size: 16px;
   }
 
+  .card {
+    width: 700px;
+    margin: 15px auto 0 auto;
+  }
 }
