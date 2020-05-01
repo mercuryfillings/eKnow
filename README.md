@@ -154,6 +154,52 @@ user-entered, timestamped progress notes._                 |
 
 #### Helper Functions
 
+Problem Page
+```
+function handleChange(i, e) {
+    const values = [...fields];
+    values[i].value = e.target.value;
+    setFields(values);
+  }
+
+  function handleAdd() {
+    const values = [...fields];
+    values.push({ value: null });
+    setFields(values);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleRemove(0);
+  }
+
+  function handleRemove(i) {
+    props.setMusings(props.musings.concat(fields[i].value))
+    const values = [...fields];
+    values.splice(i, 1);
+    setFields(values);
+    setNow(now.concat(new Date().toLocaleTimeString()))
+```
+
+Problem Input
+```
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.history.push('/' + props.problem)
+  }
+
+  function handleChange(e) {
+    props.onChange(e.target.value)
+  }
+```
+
+App
+```
+function handleChange(newProblem) {
+    setProblem(newProblem);
+  }
+```
+
 #### Swot Analysis
 
 Strengths: _I actually feel like this could grow into a weird but useful workspace for organizing thoughts around difficult problems. I want this to be like a conversation with yourself a la rubber duck programming, but with a prompt guiding the mediation. APIs seem reliable and quick._
@@ -286,3 +332,7 @@ export default function ProblemPage(props) {
 Despite being able to access my API from postman, I couldn't get it to work within the browser because of its CORS settings. Luckily, I found an API on Heroku called CORS Anywhere that help me get around this.
 
 I had a ton of trouble testing, and a lot of it came from the fact that jest and enzyme don't seem very friendly for testing when using withRouter. I had to wrap every test in a Router tag in the end, but it made it extremely hard to figure out if I was building tests incorrectly or encountering this weird withRouter complexity.
+
+Getting the old problems to render as clickable links on home was challenging because I needed to refactor everything from my child components to be props in my app component controlled by a helper function passed down as a prop; Big thanks to Soleil for helping with that. Similar problems happened with getting the musings to stick, but that was slightly easier.
+
+Making the additional forms appear for the musings was very tough, and this is probably the most frankencodey part for me. That says, it works, even if it doesn't feel like it was the right way to do it. A last-minute bug fix made it a lot better, hiding the "add fields" makes for a lot less user-error.

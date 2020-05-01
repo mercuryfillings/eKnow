@@ -79,6 +79,10 @@
   width: 100%;
 }
 
+.loghide {
+  display: none;
+}
+
 .log:hover {
 
   color: green;

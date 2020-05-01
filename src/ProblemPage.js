@@ -17,6 +17,8 @@ export default function ProblemPage(props) {
 
   const [now, setNow] = useState([])
 
+  const [show, setShow] = useState(false)
+
   function handleChange(i, e) {
     const values = [...fields];
     values[i].value = e.target.value;
@@ -27,10 +29,12 @@ export default function ProblemPage(props) {
     const values = [...fields];
     values.push({ value: null });
     setFields(values);
+    setShow(!show)
   }
 
   function handleSubmit(e) {
     e.preventDefault();
+    setShow(!show)
     handleRemove(0);
   }
 
@@ -83,7 +87,7 @@ export default function ProblemPage(props) {
             </div>
           );
         })}
-        <p className='log' onClick={() => handleAdd()}>Log Another Thought</p>
+        <p className={show ? 'log' : 'loghide'} onClick={() => handleAdd()}>Log Another Thought</p>
       </section>
     </div >
   )
