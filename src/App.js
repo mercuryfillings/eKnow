@@ -16,7 +16,6 @@ function App() {
 
   function handleChange(newProblem) {
     setProblem(newProblem);
-    console.log(newProblem)
   }
 
   return (

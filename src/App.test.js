@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { BrowserRouter as Router } from "react-router-dom";
-import sinon from 'sinon';
 import renderer from 'react-test-renderer'
 import App from './App';
 import ProblemPage from './ProblemPage'
@@ -60,6 +59,20 @@ describe("Page render checks", () => {
     expect(component).toMatchSnapshot();
   });
 
+  it('check headline title', () => {
+    const AppComponent = mount(<Router><App /></Router>);
+    expect(AppComponent.find('h2').text()).toEqual('ASK ENO WHAT HE KNOW')
+  });
+
+  it('check page title', () => {
+    const HeadComponent = mount(<Router><Header /></Router>);
+    expect(HeadComponent.find('h1').text()).toEqual('eKnow')
+  });
+
+  it('check button', () => {
+    const ButtonComponent = mount(<Router><ProblemInput /></Router>);
+    expect(ButtonComponent.find('input.button').text()).toEqual('')
+  });
 });
 
 

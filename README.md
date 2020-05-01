@@ -43,6 +43,7 @@ Test
 
 I will create reusable styled elements in Storybook for cards, input fields, and buttons, and set up testing in jest to check that the elements are taking user input correctly.
 
+Update: I did not end up using Storybook, however  used enzyme and jest for testing.
 <br>
 
 #### Goals
@@ -58,6 +59,13 @@ I will create reusable styled elements in Storybook for cards, input fields, and
 
 <br>
 
+#### Results
+This changed an awful lot as I went on! As the product started working, I began using it to help talk myself through roadblocks, which gave me insight into what was fun and what wasn't. So for that reason, I simplified it down to a sort of one-way twitter conversation with yourself, instead of the overcomplicated attempt - results system I had originally planned. 
+
+The final version is still buggy, and I couldn't get localstorage working, but the app itself is operational and feels good to use. There were a ton of issues that I didnt expect, including CORS trouble, testing being a nightmare, trimming a lot of planned components, and having to refactor state into parent props more than I thought I would need to. Still, I'm happy with the result, and am excited to keep polishing it moving forward.
+
+As a side note, I hate my tests and I desperately need to understand this aspect more, but I stayed awake until 4 in the morning figuring out how to get 12 passing tests and damnit, these pass. I'm happy to refactor after a review session, but hopefully this is sufficient for now. Oh, and my 3rd breakpoint is hard to spot, but it's a rendering on ProblemPage.css at 525px just to fix some minor form styling.
+
 #### Libraries
 
 > Use this section to list all supporting libraries and their role in the project.
@@ -66,7 +74,8 @@ I will create reusable styled elements in Storybook for cards, input fields, and
 | :--------------: | :----------------------------------------- |
 |   React Router   | _Building & Linking multiple pages_ |
 | Axios | _Pulling API data_ |
-| Enzyme |   |    |
+| Enzyme |   Testing   |
+|
 
 <br>
 
@@ -115,12 +124,9 @@ src
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the logo with a link to home._               |
 |   ProblemInput    |   functional    |   y   |   n   | _Will take user input as a prompt_   |
-| CurrentProblemList | functional |   y   |   n   | _Will log open problems user is working on._ 
-|    HistoricalProblemList    | functional |   n   |   n   | __Will archive projects listed as complete._                 _ |
+| CurrentProblemList | functional |   y   |   n   | _Will log open problems user is working on._                _ |
 |    ProblemPage    | functional |   n   |   n   | _Will act as a container for current problem prompt_               |
 |   StrategyCard    |   functional    |   y   |   n   | _Will display current strategy overlaid on grayscale img from https://picsum.photos/?ref=public-apis_      |
-| DrawButton | functional |   n   |   y   | _Will draw new strategy image / text for user_                 |
-|    BackButton    | functional |   n   |   n   | _Will return home to problem list_ |
 |   NoteInput    |   functional    |   y   |   n   | _Will allow user to add to running note list_      |
 | NoteList | functional |   n   |   y   | _Will contain user-entered, timestamped progress notes._                 |
 |    App    | functional |   n   |   n   | _Will contain full app_ |
@@ -132,21 +138,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Header    |    L     |     1 hr    |      |
-| Add Problem Input |    H     |     1 hr      |    | 
-| Implement current problem list    |    M     |     3 hrs  |       |
-| Implement Historical Problem List |    L     |     3 hrs  | | 
-| Add Problem page    |    H     |     4 hrs      |      |
-| Add Problem Input |    H     |     1 hrs      |     | 
-| Implement StrategyCard logic    |    H     |     4 hrs      |     |
-| Implement random draw button |    M     |     3 hrs      |         |
-| Add back button    |    L     |     1 hrs      |      |
-| Implement note input |    H     |     1 hrs      |        |
-| Build note list    |    L     |     3 hrs      |      |
-| Build app component |    H     |     3 hrs      |       |
-| Styling    |    M     |     7 hrs      |      |
-| Bug Hunting |    M     |     3 hrs      |       |
-| TOTAL               |          |     38 hrs   |       |
+| Add Header    |    L     |     1 hr    |   1hr   |
+| Add Problem Input |    H     |     1 hr      |  4hr  | 
+| Implement current problem list    |    M     |     3 hrs  |    4hrs   |
+| Add Problem page    |    H     |     4 hrs      |   4 hrs   |
+| Add Problem Input |    H     |     1 hrs      |   4 hrs  | 
+| Implement StrategyCard logic    |    H     |     4 hrs      |  1 hr   |
+| Implement note input |    H     |     1 hrs      |   4hrs     |
+| Build note list    |    L     |     3 hrs      |   4hrs   |
+| Build app component |    H     |     3 hrs      |   4 hrs    |
+| Styling    |    M     |     7 hrs      |   6 hrs   |
+| Bug Hunting |    M     |     3 hrs      |   n/a (persistent)    |
+| TOTAL               |          |     35 hrs   |   36 hrs    |
 
 
 <br>
@@ -178,6 +181,7 @@ Threats: _There are a number of things that I'm not sure how to implement yet, a
 - _Add favorite strategies list_
 - _Add spotify playlists for ambient Brian Eno and Glam Brian Eno_
 - _Add Grouping to organize multiple small problems around a single topic_
+- _Fix loading bugs_
 
 <br>
 

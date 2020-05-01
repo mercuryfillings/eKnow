@@ -17,8 +17,6 @@ export default function ProblemPage(props) {
 
   const [now, setNow] = useState([])
 
-  console.log(props.musings)
-
   function handleChange(i, e) {
     const values = [...fields];
     values[i].value = e.target.value;
