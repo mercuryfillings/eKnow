@@ -60,9 +60,9 @@ Update: I did not end up using Storybook, however  used enzyme and jest for test
 <br>
 
 #### Results
-This changed an awful lot as I went on! As the product started working, I began using it to help talk myself through roadblocks, which gave me insight into what was fun and what wasn't. So for that reason, I simplified it down to a sort of one-way twitter conversation with yourself, instead of the overcomplicated attempt - results system I had originally planned. 
+This changed an awful lot as I went on! As the product started working, I began using it to help talk myself through roadblocks, which gave me insight into what was fun and what wasn't. So for that reason, I simplified it down to a sort of one-way twitter conversation with yourself, instead of the overcomplicated attempt - results system I had originally planned. At first, I had planned to move some feastures to post-MVP, but the truth is, they made the app experience worse, so some got fully tossed out, and focused on quality of the product experience. 
 
-The final version is still buggy, and I couldn't get localstorage working, but the app itself is operational and feels good to use. There were a ton of issues that I didnt expect, including CORS trouble, testing being a nightmare, trimming a lot of planned components, and having to refactor state into parent props more than I thought I would need to. Still, I'm happy with the result, and am excited to keep polishing it moving forward.
+The final version is still buggy, and I couldn't get localstorage working, so its usefulness is currently limited, but the core functionality is operational and feels good to use. There were a ton of issues that I didnt expect, including CORS trouble, testing being a nightmare, trimming a lot of planned components, and having to refactor state into parent props more than I thought I would need to. Still, I'm happy with the result, and am excited to keep polishing it moving forward.
 
 As a side note, I hate my tests and I desperately need to understand this aspect more, but I stayed awake until 4 in the morning figuring out how to get 12 passing tests and damnit, these pass. I'm happy to refactor after a review session, but hopefully this is sufficient for now. Oh, and my 3rd breakpoint is hard to spot, but it's a rendering on ProblemPage.css at 525px just to fix some minor form styling.
 
@@ -75,7 +75,10 @@ As a side note, I hate my tests and I desperately need to understand this aspect
 |   React Router   | _Building & Linking multiple pages_ |
 | Axios | _Pulling API data_ |
 | Enzyme |   Testing   |
-|
+| React Datetime |  Time  |
+| React Transition Group | Transition between pages | 
+
+(Also installed but eventually did not use: sinon, storybook, & moment)
 
 <br>
 
@@ -100,12 +103,14 @@ src
       |__ fonts
       |__ graphics
 |__ components/
-      |__ Header.jsx
-      |__ ProblemInput.jsx
-      |__ ProblemList.jsx
-      |__ ProblemPage.jsx
-      |__ Footer.jss
+    |__ index.js  
       |__ App.js 
+        |__ Header.jsx
+        |__ ProblemInput.jsx
+        |__ ProblemList.jsx
+        |__ ProblemPage.jsx
+        |__ Footer.jss
+      
 ```
 
 <br>
