@@ -13,7 +13,7 @@ export default function ProblemList(props) {
       <ul>
         {
           props.list.map((li, i) => {
-            return <li key={i} className={li === "" ? 'emptyprob' : 'problist'}><Link to={'/' + props.problem}>{li}</Link></li>
+            return <Link to={'/' + props.problem}><li key={i} className={li === "" ? 'emptyprob' : 'problist'}>{li}</li></Link>
           })
         }
       </ul>

@@ -133,13 +133,14 @@ ul {
 }
 
 .musings {
-  color: rgb(65, 65, 65);
   font-family: Quicksand, sans-serif;
   width: 85%;
   padding: 20px;
   background-color: rgba(255,255,255,.7);
   border-radius: 20px;
   margin: 20px 0;
+  font-size: 12px;
+  color: rgb(4, 168, 4);
 }
 
 .musings-invis {
@@ -151,6 +152,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.musing-content {
+  font-size: 22px;
+  padding: 20px;
+  color: rgb(65, 65, 65);
 }
 
 .field {

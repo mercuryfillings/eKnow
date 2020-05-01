@@ -61,7 +61,7 @@ export default function ProblemPage(props) {
         <ul className='musing-box'>
           {
             props.musings.map((musing, i) => {
-              return <li key={i} className='musings'><i>Card No. {strat.cardnumber}:</i> | {musing} | <i>{now[i]}</i></li>
+              return <li key={i} className='musings'><i>Card No. {strat.cardnumber}:</i> | <i>{now[i]}</i> <br/><span className='musing-content'>{musing}</span>  </li>
             })
           }
         </ul>

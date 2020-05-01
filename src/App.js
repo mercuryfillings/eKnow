@@ -40,6 +40,7 @@ function App() {
                         <img className='enopic' src={require('./Eno.jpg')} alt='Brian Eno' title='Brian Eno' /></div>
                       <ProblemInput problem={problem} onChange={handleChange} />
                       <ProblemList problem={problem} list={list} setList={setList} />
+                      <p className="copy">Oblique Strategies is a card-based method for promoting creativity created by Brian Eno. Each card offers a challenging constraint intended to help artists (particularly musicians) break creative blocks by encouraging lateral thinking. This app uses these cards as a frame for a one-way conversation with yourself. </p>
                     </section>
                   </Route>
                   <Route path={'/' + problem} exact>
