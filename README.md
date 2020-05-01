@@ -102,15 +102,9 @@ src
 |__ components/
       |__ Header.jsx
       |__ ProblemInput.jsx
-      |__ CurrentProblemList.jsx
-      |__ HistoricalProblemList.jsx
+      |__ ProblemList.jsx
       |__ ProblemPage.jsx
-      |__ StrategyCard.jsx
-      |__ DrawButton.jsx
-      |__ CompleteButton.jsx
-      |__ BackButton.jsx
-      |__ NoteInput.jsx
-      |__ NoteList.jsx
+      |__ Footer.jss
       |__ App.js 
 ```
 
@@ -123,13 +117,12 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the logo with a link to home._               |
-|   ProblemInput    |   functional    |   y   |   n   | _Will take user input as a prompt_   |
-| CurrentProblemList | functional |   y   |   n   | _Will log open problems user is working on._                _ |
-|    ProblemPage    | functional |   n   |   n   | _Will act as a container for current problem prompt_               |
-|   StrategyCard    |   functional    |   y   |   n   | _Will display current strategy overlaid on grayscale img from https://picsum.photos/?ref=public-apis_      |
-|   NoteInput    |   functional    |   y   |   n   | _Will allow user to add to running note list_      |
-| NoteList | functional |   n   |   y   | _Will contain user-entered, timestamped progress notes._                 |
-|    App    | functional |   n   |   n   | _Will contain full app_ |
+|   ProblemInput    |   functional    |   n   |   y   | _Will take user input as a prompt_   |
+| ProblemList | functional |   n   |   y   | _Will log open problems user is working on._                _ |
+|    ProblemPage    | functional |   y   |   y   | _Will act as a container for current problem prompt_               |    |
+|    Footer    | functional |   n   |   n   | _Will act as a container for current problem prompt_               |    |
+user-entered, timestamped progress notes._                 |
+|    App    | functional |   Y   |   n   | _Will contain full app_ |
 
 <br>
 
@@ -190,9 +183,101 @@ Threats: _There are a number of things that I'm not sure how to implement yet, a
 ## Project Delivery
 
 ### Code Showcase
+```
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import './ProblemPage.css'
 
-TBD
+const stratURL = "https://cors-anywhere.herokuapp.com/http://brianeno.needsyourhelp.org/draw"
+const imgURL = "https://picsum.photos/800/300?grayscale"
+
+export default function ProblemPage(props) {
+  const [strat, setStrat] = useState({});
+  useEffect(() => {
+    axios(stratURL)
+      .then((res) => setStrat(res.data))
+      .catch((e) => console.log(e));
+  }, []);
+
+  const [fields, setFields] = useState([{ value: '' }]);
+
+  const [now, setNow] = useState([])
+
+  function handleChange(i, e) {
+    const values = [...fields];
+    values[i].value = e.target.value;
+    setFields(values);
+  }
+
+  function handleAdd() {
+    const values = [...fields];
+    values.push({ value: null });
+    setFields(values);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleRemove(0);
+  }
+
+  function handleRemove(i) {
+    props.setMusings(props.musings.concat(fields[i].value))
+    const values = [...fields];
+    values.splice(i, 1);
+    setFields(values);
+    setNow(now.concat(new Date().toLocaleTimeString()))
+  }
+
+  return (
+    <div>
+      <section className='headerBox'>
+        <img className="image" src={imgURL} />
+        <div className='darker'>
+          <h3 className='text'>{strat.strategy}</h3>
+          <p className='cardno'> Card No. {strat.cardnumber} </p>
+        </div>
+      </section>
+      <section className='card'>
+        <p className='prob'>Current Problem:</p>
+        <h2 className='current-problem'>{props.problem}</h2>
+        <ul className='musing-box'>
+          {
+            props.musings.map((musing, i) => {
+              return <li key={i} className='musings'><i>Card No. {strat.cardnumber}:</i> | {musing} | <i>{now[i]}</i></li>
+            })
+          }
+        </ul>
+        {fields.map((field, i) => {
+          return (
+            <div className='attempts' key={`${field}-${i}`}>
+              <form
+                className='attempt'
+                onSubmit={handleSubmit}>
+                <input
+                  maxLength='255'
+                  className='field'
+                  type="text"
+                  onChange={e => handleChange(i, e)}
+                  onSubmit={handleSubmit}
+                  placeholder="Add Musings"
+                />
+                <input
+                  type='submit'
+                  value='+'
+                  className='prob-button' />
+              </form>
+            </div>
+          );
+        })}
+        <p className='log' onClick={() => handleAdd()}>Log Another Thought</p>
+      </section>
+    </div >
+  )
+}
+```
 
 ### Code Issues & Resolutions
 
-TBD
+Despite being able to access my API from postman, I couldn't get it to work within the browser because of its CORS settings. Luckily, I found an API on Heroku called CORS Anywhere that help me get around this.
+
+I had a ton of trouble testing, and a lot of it came from the fact that jest and enzyme don't seem very friendly for testing when using withRouter. I had to wrap every test in a Router tag in the end, but it made it extremely hard to figure out if I was building tests incorrectly or encountering this weird withRouter complexity.
