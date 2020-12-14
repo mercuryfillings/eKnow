@@ -1,4 +1,4 @@
-# PROJECT 2 README 
+# README 
 
 - [Project Planning](#Project-Planning)
   - [Overview](#Overview)
@@ -18,7 +18,6 @@
 
 ### Overview
 
-![Space Cat Image](http://4.bp.blogspot.com/-2c3o1AUjgHc/UoxauxKPLUI/AAAAAAAAV_c/MlEYkfSuIsI/s400/spacecat25.jpg)
 
 **Project Title** e-Know
 
